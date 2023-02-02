@@ -1,5 +1,6 @@
 
 import './App.css';
+import Table from './components/Table';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   let date = d.getDate();
   let day = dayArray[d.getDay()];
 
-  let gridboxes = new Array(42).fill(0)
+  // let gridboxes = new Array(42).fill(0)
 
   return (
     <div className="App">
@@ -26,12 +27,13 @@ function App() {
       <div className='today'>
         {`Today is ${day}, ${month} ${date}`}
       </div>
-      <div className='flexContainer'>
+      {/* <div className='flexContainer'>
         {dayArray.map(weekday=><div>{weekday.slice(0,3)}</div>)}
       </div>
       <div className='gridContainer'>
         {gridboxes.map(()=> <div className="gridItem"></div>)}
-      </div>
+      </div> */}
+      <Table dayArray={dayArray}></Table>
     </div>
   );
 }
