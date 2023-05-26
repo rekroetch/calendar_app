@@ -1,12 +1,10 @@
 
 import './App.css';
-import Table from './components/Table';
+import May from './components/May';
+import June from './components/June';
+import July from './components/July';
 
 function App() {
-
-  // const findDate = () => {
-
-  // }
   
   const monthArray = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const dayArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -21,9 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         {month + ' ' + year}
-      </header>
+      </header> */}
       <div className='today'>
         {`Today is ${day}, ${month} ${date}`}
       </div>
@@ -33,7 +31,10 @@ function App() {
       <div className='gridContainer'>
         {gridboxes.map(()=> <div className="gridItem"></div>)}
       </div> */}
-      <Table dayArray={dayArray}></Table>
+      <May dayArray={dayArray} date={date} month={month}></May>
+      <June dayArray={dayArray} date={date} month={month}></June>
+      <July dayArray={dayArray} date={date} month={month}></July>
+
     </div>
   );
 }

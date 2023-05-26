@@ -10,11 +10,21 @@ th {
     width: calc(1/7*100vw)
 }
 
-td{
+td {
     border: 0.25px solid rgb(96, 96, 96);
     font-size: 20px;
-    text-align: end;
+    
     padding: 10px;
     height: calc(1/6*100vh);
     color: white;
+}
+
+.number {
+    text-align: end;
+    /* height: 20px; */
+}
+
+.body {
+    text-align: start;
+    height: calc(1/7*100vh);
 }
