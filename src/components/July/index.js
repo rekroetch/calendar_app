@@ -8,7 +8,9 @@ const July = ({ dayArray, date, month }) =>{
         console.log(event.target.id)
         newItem = prompt('Item title')
         console.log(newItem)
+        // return newItem
     }
+
     // console.log('newItem', newItem)
     //
     // const days31 = ["January","March","May","July","August","October","December"]
